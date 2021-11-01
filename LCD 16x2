@@ -39,3 +39,4 @@ digitalWrite(3, LOW);
 doba = millis() + 100;
 }
 }
+https://imgur.com/a/40bbjX2
