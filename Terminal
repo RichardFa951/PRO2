@@ -1,0 +1,17 @@
+int rokNarodenia;
+int vek;
+
+void setup() {
+
+  Serial.begin(9600);
+  Serial.println("Zadaj rok svojho narodenia ");
+}
+
+void loop() {
+  if(Serial.available()){
+
+  rokNarodenia = Serial.parseInt();
+  vek = 2021-rokNarodenia;
+  Serial.print("Tvoj vek je: " +vek);
+
+}
