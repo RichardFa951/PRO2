@@ -1,3 +1,4 @@
+//Keď načítavam čísla 
 int rokNarodenia;
 int vek;
 
@@ -14,4 +15,18 @@ void loop() {
   vek = 2021-rokNarodenia;
   Serial.print("Tvoj vek je: " +vek);
 
+}
+_____________________________________________________
+//Keď načítavam písmená
+void setup() {
+
+  Serial.begin(9600);
+  Serial.println("Zadaj svoje meno ");
+}
+
+void loop() {
+  if(Serial.available()){
+String meno = Serial.readString();
+Serial.println("Vitaj " + meno);
+  }
 }
