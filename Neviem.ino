@@ -61,3 +61,6 @@ ISR(ADC_vect)
    vysledok = ADCL; // načítanie dolného registra
    vysledok = vysledok | (ADCH<<8); // pripočítanie horného
 }
+
+
+https://prnt.sc/KXWr4D8XR9Gp
